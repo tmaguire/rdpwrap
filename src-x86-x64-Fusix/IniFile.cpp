@@ -58,7 +58,7 @@ INI_FILE::~INI_FILE()
 	}
 	delete[] IniData.Section;
 	delete[] FileStringsMap;
-	delete FileRaw;
+	delete[] FileRaw;
 }
 
 bool INI_FILE::CreateStringsMap()
